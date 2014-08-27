@@ -1,0 +1,966 @@
+{
+  "nodes": [
+    {
+      "type": "matematyka", 
+      "name": "Algebra obliczeniowa", 
+      "block": 4, 
+      "users": 17
+    }, 
+    {
+      "type": "informatyka", 
+      "name": "Ataki na implementacje szyfr\u00f3w symetrycznych", 
+      "block": 3, 
+      "users": 7
+    }, 
+    {
+      "type": "ro\u017cne", 
+      "name": "Fotografia", 
+      "block": 4, 
+      "users": 3
+    }, 
+    {
+      "type": "ro\u017cne", 
+      "name": "Game Design", 
+      "block": 4, 
+      "users": 3
+    }, 
+    {
+      "type": "matematyka", 
+      "name": "Geometria olimpijska - przekszta\u0142cenia", 
+      "block": 3, 
+      "users": 12
+    }, 
+    {
+      "type": "fizyka", 
+      "name": "Holografia i optyka fourierowska", 
+      "block": 4, 
+      "users": 8
+    }, 
+    {
+      "type": "matematyka", 
+      "name": "Kafelkowania, drzewa, wyznaczniki", 
+      "block": 1, 
+      "users": 8
+    }, 
+    {
+      "type": "informatyka", 
+      "name": "Maraton programistyczny", 
+      "block": 2, 
+      "users": 7
+    }, 
+    {
+      "type": "ro\u017cne", 
+      "name": "Matematyka - zr\u00f3b to sam", 
+      "block": 5, 
+      "users": 2
+    }, 
+    {
+      "type": "fizyka", 
+      "name": "Mechanika Klasyczna", 
+      "block": 2, 
+      "users": 13
+    }, 
+    {
+      "type": "matematyka", 
+      "name": "Metody sitowe w teorii liczb", 
+      "block": 6, 
+      "users": 13
+    }, 
+    {
+      "type": "fizyka", 
+      "name": "Modele siatkowe w fizyce", 
+      "block": 1, 
+      "users": 4
+    }, 
+    {
+      "type": "matematyka", 
+      "name": "Niestandardowe modele oblicze\u0144", 
+      "block": 3, 
+      "users": 6
+    }, 
+    {
+      "type": "matematyka", 
+      "name": "Optymalizacja dyskretna", 
+      "block": 6, 
+      "users": 8
+    }, 
+    {
+      "type": "fizyka", 
+      "name": "Paradoksy Rzeczywisto\u015bci - Szczeg\u00f3lna Teoria Wzgl\u0119dno\u015bci i Nier\u00f3wno\u015bci Bella", 
+      "block": 6, 
+      "users": 16
+    }, 
+    {
+      "type": "informatyka", 
+      "name": "Pisanie bot\u00f3w do gie\u0142dy walutowej FOREX", 
+      "block": 6, 
+      "users": 6
+    }, 
+    {
+      "type": "fizyka", 
+      "name": "Przewidywania og\u00f3lnej teorii wzgl\u0119dno\u015bci", 
+      "block": 1, 
+      "users": 13
+    }, 
+    {
+      "type": "fizyka", 
+      "name": "Supernowe", 
+      "block": 5, 
+      "users": 5
+    }, 
+    {
+      "type": "informatyka", 
+      "name": "Synchronizacja proces\u00f3w", 
+      "block": 1, 
+      "users": 11
+    }, 
+    {
+      "type": "informatyka", 
+      "name": "Techniki post-processingu w OpenGL", 
+      "block": 2, 
+      "users": 6
+    }, 
+    {
+      "type": "informatyka", 
+      "name": "Wizualizujemy Wikipedi\u0119", 
+      "block": 3, 
+      "users": 7
+    }, 
+    {
+      "type": "matematyka", 
+      "name": "Zanurzenia metryczne", 
+      "block": 2, 
+      "users": 16
+    }, 
+    {
+      "type": "informatyka", 
+      "name": "Zr\u00f3bmy sobie Google'a", 
+      "block": 5, 
+      "users": 8
+    }
+  ], 
+  "links": [
+    {
+      "source": 2, 
+      "common_users": 1, 
+      "target": 1, 
+      "value": 1.7142857142857144
+    }, 
+    {
+      "source": 3, 
+      "common_users": 1, 
+      "target": 2, 
+      "value": 5.333333333333333
+    }, 
+    {
+      "source": 4, 
+      "common_users": 8, 
+      "target": 0, 
+      "value": 1.2352941176470589
+    }, 
+    {
+      "source": 5, 
+      "common_users": 1, 
+      "target": 0, 
+      "value": -0.5808823529411764
+    }, 
+    {
+      "source": 6, 
+      "common_users": 6, 
+      "target": 0, 
+      "value": 1.5147058823529411
+    }, 
+    {
+      "source": 6, 
+      "common_users": 3, 
+      "target": 4, 
+      "value": 0.78125
+    }, 
+    {
+      "source": 7, 
+      "common_users": 2, 
+      "target": 1, 
+      "value": 1.3265306122448979
+    }, 
+    {
+      "source": 7, 
+      "common_users": 1, 
+      "target": 3, 
+      "value": 1.7142857142857144
+    }, 
+    {
+      "source": 8, 
+      "common_users": 1, 
+      "target": 0, 
+      "value": 0.6764705882352942
+    }, 
+    {
+      "source": 9, 
+      "common_users": 5, 
+      "target": 0, 
+      "value": 0.28959276018099556
+    }, 
+    {
+      "source": 9, 
+      "common_users": 1, 
+      "target": 1, 
+      "value": -0.37362637362637363
+    }, 
+    {
+      "source": 9, 
+      "common_users": 2, 
+      "target": 4, 
+      "value": -0.2692307692307693
+    }, 
+    {
+      "source": 9, 
+      "common_users": 6, 
+      "target": 5, 
+      "value": 2.2884615384615383
+    }, 
+    {
+      "source": 10, 
+      "common_users": 10, 
+      "target": 0, 
+      "value": 1.5791855203619911
+    }, 
+    {
+      "source": 10, 
+      "common_users": 7, 
+      "target": 4, 
+      "value": 1.5576923076923075
+    }, 
+    {
+      "source": 10, 
+      "common_users": 5, 
+      "target": 6, 
+      "value": 1.7403846153846154
+    }, 
+    {
+      "source": 10, 
+      "common_users": 1, 
+      "target": 8, 
+      "value": 1.1923076923076925
+    }, 
+    {
+      "source": 11, 
+      "common_users": 1, 
+      "target": 0, 
+      "value": -0.16176470588235292
+    }, 
+    {
+      "source": 11, 
+      "common_users": 1, 
+      "target": 1, 
+      "value": 1.0357142857142856
+    }, 
+    {
+      "source": 11, 
+      "common_users": 2, 
+      "target": 4, 
+      "value": 1.375
+    }, 
+    {
+      "source": 11, 
+      "common_users": 1, 
+      "target": 7, 
+      "value": 1.0357142857142856
+    }, 
+    {
+      "source": 11, 
+      "common_users": 3, 
+      "target": 9, 
+      "value": 2.2884615384615383
+    }, 
+    {
+      "source": 12, 
+      "common_users": 3, 
+      "target": 0, 
+      "value": 0.6764705882352942
+    }, 
+    {
+      "source": 12, 
+      "common_users": 1, 
+      "target": 1, 
+      "value": 0.3571428571428572
+    }, 
+    {
+      "source": 12, 
+      "common_users": 1, 
+      "target": 4, 
+      "value": -0.20833333333333337
+    }, 
+    {
+      "source": 12, 
+      "common_users": 2, 
+      "target": 6, 
+      "value": 1.375
+    }, 
+    {
+      "source": 12, 
+      "common_users": 1, 
+      "target": 7, 
+      "value": 0.3571428571428572
+    }, 
+    {
+      "source": 12, 
+      "common_users": 3, 
+      "target": 10, 
+      "value": 1.1923076923076925
+    }, 
+    {
+      "source": 13, 
+      "common_users": 1, 
+      "target": 0, 
+      "value": -0.5808823529411764
+    }, 
+    {
+      "source": 13, 
+      "common_users": 3, 
+      "target": 1, 
+      "value": 2.0535714285714284
+    }, 
+    {
+      "source": 13, 
+      "common_users": 1, 
+      "target": 2, 
+      "value": 1.375
+    }, 
+    {
+      "source": 13, 
+      "common_users": 1, 
+      "target": 4, 
+      "value": -0.40625
+    }, 
+    {
+      "source": 13, 
+      "common_users": 1, 
+      "target": 5, 
+      "value": -0.109375
+    }, 
+    {
+      "source": 13, 
+      "common_users": 1, 
+      "target": 6, 
+      "value": -0.109375
+    }, 
+    {
+      "source": 13, 
+      "common_users": 4, 
+      "target": 7, 
+      "value": 3.071428571428571
+    }, 
+    {
+      "source": 13, 
+      "common_users": 1, 
+      "target": 10, 
+      "value": -0.45192307692307687
+    }, 
+    {
+      "source": 13, 
+      "common_users": 2, 
+      "target": 12, 
+      "value": 1.375
+    }, 
+    {
+      "source": 14, 
+      "common_users": 5, 
+      "target": 0, 
+      "value": 0.047794117647058876
+    }, 
+    {
+      "source": 14, 
+      "common_users": 2, 
+      "target": 1, 
+      "value": 0.017857142857142794
+    }, 
+    {
+      "source": 14, 
+      "common_users": 2, 
+      "target": 4, 
+      "value": -0.40625
+    }, 
+    {
+      "source": 14, 
+      "common_users": 6, 
+      "target": 5, 
+      "value": 1.671875
+    }, 
+    {
+      "source": 14, 
+      "common_users": 1, 
+      "target": 6, 
+      "value": -0.5546875
+    }, 
+    {
+      "source": 14, 
+      "common_users": 2, 
+      "target": 7, 
+      "value": 0.017857142857142794
+    }, 
+    {
+      "source": 14, 
+      "common_users": 10, 
+      "target": 9, 
+      "value": 1.7403846153846154
+    }, 
+    {
+      "source": 14, 
+      "common_users": 1, 
+      "target": 10, 
+      "value": -0.7259615384615384
+    }, 
+    {
+      "source": 14, 
+      "common_users": 3, 
+      "target": 11, 
+      "value": 1.671875
+    }, 
+    {
+      "source": 14, 
+      "common_users": 1, 
+      "target": 12, 
+      "value": -0.40625
+    }, 
+    {
+      "source": 14, 
+      "common_users": 2, 
+      "target": 13, 
+      "value": -0.109375
+    }, 
+    {
+      "source": 15, 
+      "common_users": 1, 
+      "target": 0, 
+      "value": -0.4411764705882353
+    }, 
+    {
+      "source": 15, 
+      "common_users": 2, 
+      "target": 1, 
+      "value": 1.7142857142857144
+    }, 
+    {
+      "source": 15, 
+      "common_users": 1, 
+      "target": 3, 
+      "value": 2.1666666666666665
+    }, 
+    {
+      "source": 15, 
+      "common_users": 1, 
+      "target": 4, 
+      "value": -0.20833333333333337
+    }, 
+    {
+      "source": 15, 
+      "common_users": 1, 
+      "target": 5, 
+      "value": 0.1875
+    }, 
+    {
+      "source": 15, 
+      "common_users": 2, 
+      "target": 7, 
+      "value": 1.7142857142857144
+    }, 
+    {
+      "source": 15, 
+      "common_users": 1, 
+      "target": 9, 
+      "value": -0.2692307692307693
+    }, 
+    {
+      "source": 15, 
+      "common_users": 1, 
+      "target": 10, 
+      "value": -0.2692307692307693
+    }, 
+    {
+      "source": 15, 
+      "common_users": 1, 
+      "target": 11, 
+      "value": 1.375
+    }, 
+    {
+      "source": 15, 
+      "common_users": 2, 
+      "target": 14, 
+      "value": 0.1875
+    }, 
+    {
+      "source": 16, 
+      "common_users": 4, 
+      "target": 0, 
+      "value": 0.03167420814479649
+    }, 
+    {
+      "source": 16, 
+      "common_users": 1, 
+      "target": 1, 
+      "value": -0.37362637362637363
+    }, 
+    {
+      "source": 16, 
+      "common_users": 2, 
+      "target": 4, 
+      "value": -0.2692307692307693
+    }, 
+    {
+      "source": 16, 
+      "common_users": 6, 
+      "target": 5, 
+      "value": 2.2884615384615383
+    }, 
+    {
+      "source": 16, 
+      "common_users": 9, 
+      "target": 9, 
+      "value": 2.035502958579882
+    }, 
+    {
+      "source": 16, 
+      "common_users": 1, 
+      "target": 10, 
+      "value": -0.6627218934911243
+    }, 
+    {
+      "source": 16, 
+      "common_users": 2, 
+      "target": 11, 
+      "value": 1.1923076923076925
+    }, 
+    {
+      "source": 16, 
+      "common_users": 1, 
+      "target": 13, 
+      "value": -0.45192307692307687
+    }, 
+    {
+      "source": 16, 
+      "common_users": 9, 
+      "target": 14, 
+      "value": 1.4663461538461537
+    }, 
+    {
+      "source": 17, 
+      "common_users": 3, 
+      "target": 5, 
+      "value": 3.2750000000000004
+    }, 
+    {
+      "source": 17, 
+      "common_users": 3, 
+      "target": 9, 
+      "value": 1.6307692307692307
+    }, 
+    {
+      "source": 17, 
+      "common_users": 1, 
+      "target": 10, 
+      "value": -0.12307692307692308
+    }, 
+    {
+      "source": 17, 
+      "common_users": 2, 
+      "target": 14, 
+      "value": 0.42500000000000004
+    }, 
+    {
+      "source": 17, 
+      "common_users": 1, 
+      "target": 15, 
+      "value": 0.8999999999999999
+    }, 
+    {
+      "source": 17, 
+      "common_users": 3, 
+      "target": 16, 
+      "value": 1.6307692307692307
+    }, 
+    {
+      "source": 18, 
+      "common_users": 2, 
+      "target": 0, 
+      "value": -0.39037433155080214
+    }, 
+    {
+      "source": 18, 
+      "common_users": 4, 
+      "target": 1, 
+      "value": 1.9610389610389611
+    }, 
+    {
+      "source": 18, 
+      "common_users": 1, 
+      "target": 2, 
+      "value": 0.7272727272727273
+    }, 
+    {
+      "source": 18, 
+      "common_users": 1, 
+      "target": 4, 
+      "value": -0.5681818181818181
+    }, 
+    {
+      "source": 18, 
+      "common_users": 1, 
+      "target": 5, 
+      "value": -0.3522727272727273
+    }, 
+    {
+      "source": 18, 
+      "common_users": 2, 
+      "target": 6, 
+      "value": 0.2954545454545454
+    }, 
+    {
+      "source": 18, 
+      "common_users": 4, 
+      "target": 7, 
+      "value": 1.9610389610389611
+    }, 
+    {
+      "source": 18, 
+      "common_users": 2, 
+      "target": 10, 
+      "value": -0.2027972027972028
+    }, 
+    {
+      "source": 18, 
+      "common_users": 1, 
+      "target": 12, 
+      "value": -0.13636363636363635
+    }, 
+    {
+      "source": 18, 
+      "common_users": 7, 
+      "target": 13, 
+      "value": 3.534090909090909
+    }, 
+    {
+      "source": 18, 
+      "common_users": 2, 
+      "target": 14, 
+      "value": -0.3522727272727273
+    }, 
+    {
+      "source": 18, 
+      "common_users": 1, 
+      "target": 15, 
+      "value": -0.13636363636363635
+    }, 
+    {
+      "source": 18, 
+      "common_users": 1, 
+      "target": 16, 
+      "value": -0.6013986013986015
+    }, 
+    {
+      "source": 19, 
+      "common_users": 3, 
+      "target": 1, 
+      "value": 3.071428571428571
+    }, 
+    {
+      "source": 19, 
+      "common_users": 1, 
+      "target": 2, 
+      "value": 2.1666666666666665
+    }, 
+    {
+      "source": 19, 
+      "common_users": 1, 
+      "target": 6, 
+      "value": 0.1875
+    }, 
+    {
+      "source": 19, 
+      "common_users": 2, 
+      "target": 7, 
+      "value": 1.7142857142857144
+    }, 
+    {
+      "source": 19, 
+      "common_users": 1, 
+      "target": 12, 
+      "value": 0.5833333333333333
+    }, 
+    {
+      "source": 19, 
+      "common_users": 4, 
+      "target": 13, 
+      "value": 3.75
+    }, 
+    {
+      "source": 19, 
+      "common_users": 1, 
+      "target": 15, 
+      "value": 0.5833333333333333
+    }, 
+    {
+      "source": 19, 
+      "common_users": 4, 
+      "target": 18, 
+      "value": 2.4545454545454546
+    }, 
+    {
+      "source": 20, 
+      "common_users": 1, 
+      "target": 1, 
+      "value": 0.16326530612244894
+    }, 
+    {
+      "source": 20, 
+      "common_users": 1, 
+      "target": 2, 
+      "value": 1.7142857142857144
+    }, 
+    {
+      "source": 20, 
+      "common_users": 2, 
+      "target": 3, 
+      "value": 4.428571428571429
+    }, 
+    {
+      "source": 20, 
+      "common_users": 2, 
+      "target": 4, 
+      "value": 0.3571428571428572
+    }, 
+    {
+      "source": 20, 
+      "common_users": 4, 
+      "target": 7, 
+      "value": 3.6530612244897958
+    }, 
+    {
+      "source": 20, 
+      "common_users": 1, 
+      "target": 10, 
+      "value": -0.37362637362637363
+    }, 
+    {
+      "source": 20, 
+      "common_users": 1, 
+      "target": 11, 
+      "value": 1.0357142857142856
+    }, 
+    {
+      "source": 20, 
+      "common_users": 2, 
+      "target": 13, 
+      "value": 1.0357142857142856
+    }, 
+    {
+      "source": 20, 
+      "common_users": 2, 
+      "target": 14, 
+      "value": 0.017857142857142794
+    }, 
+    {
+      "source": 20, 
+      "common_users": 2, 
+      "target": 15, 
+      "value": 1.7142857142857144
+    }, 
+    {
+      "source": 20, 
+      "common_users": 1, 
+      "target": 16, 
+      "value": -0.37362637362637363
+    }, 
+    {
+      "source": 20, 
+      "common_users": 2, 
+      "target": 18, 
+      "value": 0.48051948051948057
+    }, 
+    {
+      "source": 20, 
+      "common_users": 2, 
+      "target": 19, 
+      "value": 1.7142857142857144
+    }, 
+    {
+      "source": 21, 
+      "common_users": 8, 
+      "target": 0, 
+      "value": 0.6764705882352942
+    }, 
+    {
+      "source": 21, 
+      "common_users": 1, 
+      "target": 1, 
+      "value": -0.4910714285714286
+    }, 
+    {
+      "source": 21, 
+      "common_users": 1, 
+      "target": 2, 
+      "value": 0.1875
+    }, 
+    {
+      "source": 21, 
+      "common_users": 1, 
+      "target": 3, 
+      "value": 0.1875
+    }, 
+    {
+      "source": 21, 
+      "common_users": 6, 
+      "target": 4, 
+      "value": 0.78125
+    }, 
+    {
+      "source": 21, 
+      "common_users": 2, 
+      "target": 5, 
+      "value": -0.109375
+    }, 
+    {
+      "source": 21, 
+      "common_users": 6, 
+      "target": 6, 
+      "value": 1.671875
+    }, 
+    {
+      "source": 21, 
+      "common_users": 1, 
+      "target": 7, 
+      "value": -0.4910714285714286
+    }, 
+    {
+      "source": 21, 
+      "common_users": 1, 
+      "target": 9, 
+      "value": -0.7259615384615384
+    }, 
+    {
+      "source": 21, 
+      "common_users": 8, 
+      "target": 10, 
+      "value": 1.1923076923076925
+    }, 
+    {
+      "source": 21, 
+      "common_users": 5, 
+      "target": 12, 
+      "value": 1.96875
+    }, 
+    {
+      "source": 21, 
+      "common_users": 3, 
+      "target": 13, 
+      "value": 0.3359375
+    }, 
+    {
+      "source": 21, 
+      "common_users": 3, 
+      "target": 14, 
+      "value": -0.33203125
+    }, 
+    {
+      "source": 21, 
+      "common_users": 3, 
+      "target": 16, 
+      "value": -0.17788461538461542
+    }, 
+    {
+      "source": 21, 
+      "common_users": 1, 
+      "target": 17, 
+      "value": -0.2875
+    }, 
+    {
+      "source": 21, 
+      "common_users": 3, 
+      "target": 18, 
+      "value": -0.02840909090909094
+    }, 
+    {
+      "source": 21, 
+      "common_users": 1, 
+      "target": 19, 
+      "value": -0.40625
+    }, 
+    {
+      "source": 21, 
+      "common_users": 2, 
+      "target": 20, 
+      "value": 0.017857142857142794
+    }, 
+    {
+      "source": 22, 
+      "common_users": 2, 
+      "target": 1, 
+      "value": 1.0357142857142856
+    }, 
+    {
+      "source": 22, 
+      "common_users": 1, 
+      "target": 2, 
+      "value": 1.375
+    }, 
+    {
+      "source": 22, 
+      "common_users": 2, 
+      "target": 3, 
+      "value": 3.75
+    }, 
+    {
+      "source": 22, 
+      "common_users": 5, 
+      "target": 7, 
+      "value": 4.089285714285714
+    }, 
+    {
+      "source": 22, 
+      "common_users": 1, 
+      "target": 11, 
+      "value": 0.78125
+    }, 
+    {
+      "source": 22, 
+      "common_users": 3, 
+      "target": 13, 
+      "value": 1.671875
+    }, 
+    {
+      "source": 22, 
+      "common_users": 1, 
+      "target": 14, 
+      "value": -0.5546875
+    }, 
+    {
+      "source": 22, 
+      "common_users": 3, 
+      "target": 15, 
+      "value": 2.5625
+    }, 
+    {
+      "source": 22, 
+      "common_users": 3, 
+      "target": 18, 
+      "value": 0.9431818181818181
+    }, 
+    {
+      "source": 22, 
+      "common_users": 2, 
+      "target": 19, 
+      "value": 1.375
+    }, 
+    {
+      "source": 22, 
+      "common_users": 5, 
+      "target": 20, 
+      "value": 4.089285714285714
+    }, 
+    {
+      "source": 22, 
+      "common_users": 1, 
+      "target": 21, 
+      "value": -0.5546875
+    }
+  ]
+}

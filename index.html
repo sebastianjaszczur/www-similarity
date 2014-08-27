@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.link {
+  stroke: #999;
+}
+
+.label, .legenda_node_label {
+    font-size: 8pt;
+    opacity: 0.8;
+    cursor: default;
+}
+
+.blok_rect, .blok {
+    cursor: default;
+}
+
+</style>
+<body>
+<script src="lib/d3.v3.min.js"></script>
+<script>
+
+var width = 1200,
+    height = 600;
+
+var color = d3.scale.category10();
+
+var force = d3.layout.force()
+    .charge(-600)
+    .linkDistance(90)
+    .linkStrength(function(d) {return Math.min(Math.max(0, d.value)/4, 1);})
+    .size([width, height]);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+function users_to_size(number_of_users) { return Math.sqrt(number_of_users)*2; }
+function circle_size(d) { return users_to_size(d.users); }
+
+var colors = {"informatyka": color(0),
+              "matematyka": color(2),
+              "fizyka": color(3),
+              "rożne": color(7)
+              }
+function type_to_color(d) { return colors[d.type]; }
+
+d3.json("miserables.json", function(error, graph) {
+  force
+      .nodes(graph.nodes)
+      .links(graph.links)
+      .start();
+
+  var opacity_scale = d3.scale.linear()
+    .domain([d3.min(graph.links, function(d){ return d.value; }),
+             d3.max(graph.links, function(d){ return d.value; })])
+    .range([0.1, 1.0]);
+
+  console.log(opacity_scale);
+
+  var link = svg.selectAll(".link")
+      .data(graph.links)
+    .enter().append("line")
+      .attr("class", "link")
+      .style("opacity", function (d) { return opacity_scale(d.value); })
+      .style("stroke-width", function(d) { return users_to_size(d.common_users); });
+
+  var node = svg.selectAll(".node")
+      .data(graph.nodes)
+    .enter().append("circle")
+      .attr("class", "node")
+      .attr("r", circle_size)
+      .style("fill", function(d) { return type_to_color(d); })
+      .call(force.drag);
+
+  ///////////////////////////////
+
+  var dni = svg.append("g")
+    .attr("id", "dni")
+    .attr("transform", "translate(100,50)");
+
+  var DURATION = 500;
+
+  var bloki = svg.selectAll('.blok')
+    .data([1, 2, 3, 4, 5, 6]);
+
+  var bloki_g = bloki.enter()
+    .append("g")
+      .attr("class", "blok")
+      .attr("transform", function (d, i) {
+        return "translate(50," + (100 + 25 * i + (10 * (parseInt(i/2)))) + ")";
+       })
+       .on("mouseover", function(d) {
+        d3.selectAll(".label")
+          .transition().duration(DURATION)
+          .style("opacity", function(c) { return c.block === d ? 1.0 : 0; });
+
+        d3.selectAll(".node")
+          .transition().duration(DURATION)
+          .style("opacity", function(c) { return c.block === d ? 1.0 : 0.4; })
+
+        d3.selectAll(".link")
+          .transition().duration(DURATION)
+          .style("stroke", function(c) {
+              if (c.target.block === d && c.source.block === d)
+                  return "Coral";
+              else if (c.target.block === d || c.source.block === d)
+                  return "LightGreen";
+              else
+                  return null;
+          })
+    })
+    .on("mouseout", function(d) {
+        d3.selectAll(".label")
+          .transition().duration(DURATION)
+          .style("opacity", function(c) { return 1.0; })
+
+        d3.selectAll(".node")
+          .transition().duration(DURATION)
+          .style("opacity", function(c) { return 1.0; })
+
+        d3.selectAll(".link")
+          .transition().duration(DURATION)
+          .style("stroke", function(c) { return null; })
+    });
+
+  bloki_g.append("rect")
+    .attr("class", "blok_rect")
+    .attr("rx", 3)
+    .attr("ry", 3)
+    .attr("x", -18)
+    .attr("y", -15)
+    .attr("width", 180)
+    .attr("height", 18)
+    .attr("fill", "#e6e6e6")
+    .style("stroke", "#222")
+    .style("stroke-width", 0.5);
+
+  bloki_g.append("text")
+    .attr("class", "blok_name")
+    .attr("x", 15)
+    .text(function (d) { return "Dzień "+ parseInt((d+1)/2) + " " +(d%2 === 0 ? "popołudniu" : "rano"); });
+
+  //////////////////
+
+  var text = svg.selectAll(".label")
+      .data(graph.nodes)
+    .enter().append("text")
+      .attr("class", "label")
+      .text(function (d) { return d.name; });
+
+  force.on("tick", function() {
+    link.attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+    node.attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+
+    text.attr("x", function(d) { return d.x + 1.5 * circle_size(d); })
+        .attr("y", function(d) { return d.y; });
+
+  var legenda = svg.append("g")
+    .attr("class", "legenda")
+
+  var LEGENDA_NODE_DATA = [2, 6, 18];
+
+  var l_node = legenda.selectAll(".node")
+    .data(LEGENDA_NODE_DATA)
+    .enter()
+    .append("circle")
+    .attr("class", "node")
+    .attr("r", function(d) {return users_to_size(d); })
+    .style("fill", function(d) { return "grey"; })
+    .attr("cx", function(d) { return 50; })
+    .attr("cy", function(d, i) { return 300 + 25*i; });
+
+  var l_node_text = legenda.selectAll(".legenda_node_label")
+    .data(LEGENDA_NODE_DATA)
+    .enter()
+    .append("text")
+    .attr("class", "legenda_node_label")
+    .text(function (d) { return d+" uczestników" })
+    .attr("x", function(d) { return 75; })
+    .attr("y", function(d, i) { return 300 + 25*i; });
+
+  });
+
+});
+
+</script>
