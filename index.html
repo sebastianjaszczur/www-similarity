@@ -172,9 +172,10 @@ d3.json("miserables.json", function(error, graph) {
 
     text.attr("x", function(d) { return d.x + 1.5 * circle_size(d); })
         .attr("y", function(d) { return d.y; });
-
+  });
+  
   var legenda = svg.append("g")
-    .attr("class", "legenda")
+    .attr("class", "legenda");
 
   var LEGENDA_NODE_DATA = [2, 6, 18];
 
@@ -196,8 +197,6 @@ d3.json("miserables.json", function(error, graph) {
     .text(function (d) { return d+" uczestników" })
     .attr("x", function(d) { return 75; })
     .attr("y", function(d, i) { return 300 + 25*i; });
-
-  });
 
 });
 
